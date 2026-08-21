@@ -1,6 +1,6 @@
 # Waggly67.github.io
 <html>
-  <title>HOLA AMIGOS</title>
+  <title>"HOLA AMIGOS "</title>
   <HEAD>
   SIX SEVEN 
 <HEAD/>
