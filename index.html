@@ -1,70 +1,403 @@
 <html>
-  <div style="display: flex;">
-    <div style="width: 100%;">
-  <head><H1>Jesús Gael Sandoval Rosas</H1>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<head>
+    <title>Curriculum Vitae</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
+
         body {
             font-family: 'Montserrat', sans-serif;
+            margin: 40px 70px;
+            color: #333;
         }
 
-        h1, h2, li, p {
-            font-weight: 700;
+        /* PARTE DE ARRIBA */
+
+        .arriba {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #f83904;
+            padding-bottom: 20px;
         }
-    </style></head>
-  <body>
-  <h1>Contacto</h1>
-  <p>Huatusco Ver. Av.7 Oriente</p>
-  <p>Tel: 2731093941</p>
-  <p>dukygael@gmail.com</p>
-  <p>Matrícula: S26004661</p>
-    <h1>Experiencia laboral</h1>
-    <p style="color: orange">Huatusco Ver.</p>
-<p>Mantenimiento de hardware y software en equipos de computo</p>
-  <h1>Logros y certificados</h1>
-  <li>Certificado en tecnologias de la informacion</li> 
-  <li>Certificado de inducción a la programación </li> 
-  <li>Certificado de mantenimiento de equipos de computo</li>
-  <li>Físico matemático</li>
-  <h1>Educación</h1>
-  <li>Nivel preescolar/ Esc. preescolar Rugiro Zúñiga
-  </li>
-  <li>Nivel medio (secundaria) / Esc. secundaria gral. Jovita Lara Estrada</li>
-  <li>Nivel medio superior (Bachillerato) / Esc. de Bachilleres Gral. Francisco J. Múgica</li> 
-    <li>Estudiante nivel superior</p>
-      </div>
-      <div style="width: 100%;">
-        <style>
+
+        .nombre {
+            width: 35%;
+        }
+
+        .nombre h1 {
+            font-size: 25px;
+            color: #222;
+            margin-bottom: 5px;
+        }
+
+        .nombre p {
+            font-size: 11px;
+            line-height: 1.5;
+        }
+
         .foto {
-            width: 150px;
-            height: 150px;
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
             object-fit: cover;
+            margin-left: 50px;
+            margin-right: 50px;
         }
+
+        .contacto {
+            width: 35%;
+            font-size: 10px;
+            line-height: 1.8;
+        }
+
+        .contacto b {
+            color: #e74c3c;
+        }
+
+
+        /* COLUMNAS */
+
+        .columnas {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .izquierda {
+            width: 60%;
+            padding-right: 35px;
+        }
+
+        .derecha {
+            width: 40%;
+            padding-left: 25px;
+        }
+
+
+        /* TITULOS */
+
+        h2 {
+            color: #e74c3c;
+            font-size: 15px;
+            border-bottom: 2px solid #f9f8f8;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+
+        p, li {
+            font-size: 11px;
+            line-height: 1.6;
+        }
+
+
+        /* EXPERIENCIA Y EDUCACION */
+
+        .trabajo {
+            border-left: 2px solid #ff0000e4;
+            padding-left: 15px;
+            margin-bottom: 18px;
+        }
+
+        .trabajo h3 {
+            font-size: 12px;
+            margin-bottom: 3px;
+        }
+
+        .fecha {
+            color: #e74c3c;
+            font-size: 10px;
+        }
+
+
+        /* HABILIDADES */
+
+        .habilidad {
+            margin-bottom: 12px;
+            font-size: 10px;
+        }
+
+        .barra {
+            background-color: #ddd;
+            height: 6px;
+            width: 100%;
+            margin-top: 4px;
+        }
+
+        .rojo {
+            background-color: #e74c3c;
+            height: 6px;
+        }
+
     </style>
-        <img src="imagenes/yo.jpeg" width="63.5"Fotografía" class="foto">
-  <h1>Habilidades</h1>
-  <li>Comunicacion verbal y escrita</li>
-  <li>Trabajo en equipo</li>
-  <li>Liderazgo</li>
-  <li>Pensamiento crítico</li>
-  <li>Gestión del tiempo</li>
-  <li>Creatividad</li>
-  <h1>Idiomas</h1>
-  <p>Español(Nativo)  / Inglés básico</p>
-  <h1>Intereses</h1>
-  <li>Gym</li>
-  <li>Atletismo</li>
-  <li>Fisiculturismo</li>
-  <li>Senderismo</li>
-  <li>Handball</li>
-  <li>Videojuegos</li>
-  <li>Matemáticas</li>
-  <li>Dibujo</li>
-   </div>
-</div>
-  </body>
+</head>
+
+
+<body>
+
+
+    <!-- ENCABEZADO -->
+
+    <div class="arriba">
+
+        <div class="nombre">
+
+            <h1>Jesús Gael<br>Sandoval Rosas</h1>
+
+            <p>
+                Estudiante de nivel superior interesado
+                en las tecnologías de la información,
+                programación ,mantenimiento de equipos y desarrollo de software.
+            </p>
+
+        </div>
+
+
+        <!-- FOTO CENTRADA -->
+
+        <img src="imagenes/yo.jpeg" class="foto">
+
+
+        <!-- CONTACTO A LA DERECHA -->
+
+        <div class="contacto">
+
+            <p>
+                <b>Dirección</b><br>
+                Huatusco Ver. Av. 7 Oriente
+            </p>
+
+            <p>
+                <b>Teléfono</b><br>
+                2731093941
+            </p>
+            <p>
+                <b>Email</b><br>
+                dukygael@gmail.com
+            </p>
+
+            <p>
+                <b>Matrícula</b><br>
+                S26004661
+            </p>
+            <p>
+                <b>Instagram</b><br>
+                @gael-sndv
+            </p>
+              <b>Facebook</b><br>
+                Gael Sandoval
+            </p>
+        </div>
+
+    </div>
+
+
+
+    <!-- CONTENIDO -->
+
+    <div class="columnas">
+
+
+        <!-- COLUMNA IZQUIERDA -->
+
+        <div class="izquierda">
+
+
+            <h2>Experiencia laboral</h2>
+
+            <div class="trabajo">
+
+                <h3>Mantenimiento de equipos de cómputo</h3>
+
+                <div class="fecha">
+                    Huatusco Ver.
+                </div>
+
+                <p>
+                    Mantenimiento de hardware y software
+                    en equipos de cómputo.
+                </p>
+
+            </div>
+
+
+
+            <h2>Educación</h2>
+
+            <div class="trabajo">
+
+                <h3>Estudiante nivel superior</h3>
+
+                <p>
+                    Actualmente estudiante de nivel superior.
+                </p>
+
+            </div>
+
+
+            <div class="trabajo">
+
+                <h3>Bachillerato</h3>
+
+                <div class="fecha">
+                    Esc. de Bachilleres Gral. Francisco J. Múgica
+                </div>
+
+            </div>
+
+
+            <div class="trabajo">
+
+                <h3>Secundaria</h3>
+
+                <div class="fecha">
+                    Esc. secundaria gral. Jovita Lara Estrada
+                </div>
+
+            </div>
+
+
+            <div class="trabajo">
+
+                <h3>Preescolar</h3>
+
+                <div class="fecha">
+                    Esc. preescolar Rugiro Zúñiga
+                </div>
+
+            </div>
+
+
+
+            <h2>Logros y certificados</h2>
+
+            <li>
+                Certificado en tecnologías de la información
+            </li>
+
+            <li>
+                Certificado de inducción a la programación
+            </li>
+
+            <li>
+                Certificado de mantenimiento de equipos de cómputo
+            </li>
+
+            <li>
+                Físico matemático
+            </li>
+
+
+        </div>
+
+
+
+        <!-- COLUMNA DERECHA -->
+
+        <div class="derecha">
+
+
+            <h2>Habilidades</h2>
+
+
+            <div class="habilidad">
+
+                Comunicación verbal y escrita
+
+                <div class="barra">
+                    <div class="rojo" style="width: 90%;"></div>
+                </div>
+
+            </div>
+
+
+            <div class="habilidad">
+
+                Trabajo en equipo
+
+                <div class="barra">
+                    <div class="rojo" style="width: 85%;"></div>
+                </div>
+
+            </div>
+
+
+            <div class="habilidad">
+
+                Liderazgo
+
+                <div class="barra">
+                    <div class="rojo" style="width: 75%;"></div>
+                </div>
+
+            </div>
+
+
+            <div class="habilidad">
+
+                Pensamiento crítico
+
+                <div class="barra">
+                    <div class="rojo" style="width: 100%;"></div>
+                </div>
+
+            </div>
+
+
+            <div class="habilidad">
+
+                Gestión del tiempo
+
+                <div class="barra">
+                    <div class="rojo" style="width: 80%;"></div>
+                </div>
+
+            </div>
+
+
+            <div class="habilidad">
+
+                Creatividad
+
+                <div class="barra">
+                    <div class="rojo" style="width: 85%;"></div>
+                </div>
+
+            </div>
+
+
+
+            <h2>Idiomas</h2>
+
+            <p>
+                <b>Español</b> — Nativo
+            </p>
+
+            <p>
+                <b>Inglés</b> — Básico
+            </p>
+
+
+
+            <h2>Intereses</h2>
+
+            <li>Gym</li>
+            <li>Atletismo</li>
+            <li>Fisiculturismo</li>
+            <li>Senderismo</li>
+            <li>Handball</li>
+            <li>Videojuegos</li>
+            <li>Matemáticas</li>
+            <li>Dibujo</li>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
 </html>
